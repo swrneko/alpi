@@ -126,10 +126,46 @@ readUserActionMainMenu() {
     readUserActionLanguageMenu
   elif [ $USER_ACTION_MAIN_MENU = "1" ]; # Start installation
   then
+    clear
+    alpiMenuHeader
     startInstallMenu
   else
     userUnknownCommand
   fi
+}
+
+startInstallMenu() {
+  echo "/================================================\\"
+  echo -e "|$LBLUE     ~~~~~~~~~~ [ Start Install ] ~~~~~~~~~     $RESET|"
+  echo -e "|$LBLUE       Here starts new point of your life       $RESET|"
+  echo -e "|$LBLUE     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     $RESET|"
+  echo "|------------------------------------------------|"
+  echo "|  Points:                                       |"
+  echo "|                                                |"
+  echo "|  0) Keyboard Layout                            |"
+  echo "|  1) Mirror region                              |"
+  echo "|  2) Select drive(s)                            |"
+  echo "|  3) Select bootloader                          |"
+  echo "|  4) Select drive layout                        |"
+  echo "|  5) Set encrypt                                |"
+  echo "|  6) Use swap                                   |"
+  echo "|  7) Hostname                                   |"
+  echo "|  8) Create users                               |"
+  echo "|  9) Set password                               |"
+  echo "|  10) Set DE/WM                                 |"
+  echo "|  11) Set audioserver                           |"
+  echo "|  12) Select Kernel                             |"
+  echo "|  13) Setup network                             |"
+  echo "|  14) Select timezone                           |"
+  echo "|  15) Set time sync                             |"
+  echo "|  16) Set repositories                          |"
+  echo "|  17) Set GPU driver                            |"
+  echo "|  18) Game things                               |"
+  echo "|  19) Profiles                                  |"
+  echo "|                                                |"
+  echo "|------------------------------------------------|"
+  echo -e "|   $RED A) Abort $RESET $YELLOW S) Save profile $RESET $GREEN I) Install $RESET    |"
+  echo "\\================================================/"
 }
 
 # Main body
