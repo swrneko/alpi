@@ -10,7 +10,17 @@ LBLUE="\033[36m"
 WHITE="\033[37m"
 RESET='\033[0m'
 
+IS_NETWORK_WORKING="Off"
+KERNEL_REV=`uname -r`
+
 clear
+if ping -c 1 "google.com" &> /dev/null;
+then
+  IS_NETWORK_WORKING="$GREEN On $RESET"
+else
+  IS_NETWORK_WORKING="$RED Off$RESET"
+fi
+
 echo "/================================================\\"
 echo -e "|$LBLUE      ~~~~~~~~~~~~~~ [ ALPI ] ~~~~~~~~~~~~~~    $RESET|"
 echo -e "|$LBLUE      Arch Linux Pseudographical Installer      $RESET|"
@@ -22,10 +32,10 @@ echo -e "|$LBLUE       Here you can change some parameters      $RESET|"
 echo -e "|$LBLUE      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     $RESET|"
 echo "|------------------------------------------------|"
 echo "|  Parameters:           |   System info:        |"
-echo "|  0)  [Change Language] |   Network:            |"
+echo -e "|  0)  [Change Language] |   Network:$IS_NETWORK_WORKING        |"
 echo "|                        |                       |"
 echo "|  1)  [Start install]   |   Kernel:             |"
-echo "|                        |                       |"
+echo -e "|                        |  $GREEN $KERNEL_REV $RESET     |"
 echo -e "| $GREEN $VERSION $RESET          |                       |"
 echo "|------------------------------------------------|"
 echo -e "|                    $RED Q) Quit $RESET                   |"
