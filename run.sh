@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # TYY color varibles
-VERSION="v0.0.1 BETA"
+VERSION="v0.0.1 ALPHA"
 RED="\033[31m"
 GREEN="\033[32m"
 YELLOW="\033[33m"
@@ -78,7 +78,7 @@ echo -e "|  0)  [Change Language] |   Network:$IS_NETWORK_WORKING        |"
 echo "|                        |                       |"
 echo "|  1)  [Start install]   |   Kernel:             |"
 echo -e "|                        |   $KERNEL_REV      |"
-echo -e "| $GREEN $VERSION $RESET          |                       |"
+echo -e "| $GREEN $VERSION $RESET         |                       |"
 echo "|------------------------------------------------|"
 echo -e "|                    $RED Q) Quit $RESET                   |"
 echo "\\================================================/"
