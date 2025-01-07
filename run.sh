@@ -1,0 +1,32 @@
+#! /bin/bash
+
+VERSION="v0.0.1 BETA"
+RED="\033[31m"
+GREEN="\033[32m"
+YELLOW="\033[33m"
+BLUE="\033[34m"
+PURPLE="\033[35m"
+LBLUE="\033[36m"
+WHITE="\033[37m"
+RESET='\033[0m'
+
+clear
+echo "/================================================\\"
+echo -e "|$LBLUE      ~~~~~~~~~~~~~~ [ ALPI ] ~~~~~~~~~~~~~~    $RESET|"
+echo -e "|$LBLUE      Arch Linux Pseudographical Installer      $RESET|"
+echo -e "|$LBLUE     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     $RESET|"
+echo "\\================================================/"
+echo "/================================================\\"
+echo -e "|$LBLUE      ~~~~~~~~~~ [ Main menu ] ~~~~~~~~~~~~     $RESET|"
+echo -e "|$LBLUE       Here you can change some parameters      $RESET|"
+echo -e "|$LBLUE      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     $RESET|"
+echo "|------------------------------------------------|"
+echo "|  Parameters:           |   System info:        |"
+echo "|  0)  [Change Language] |   Network:            |"
+echo "|                        |                       |"
+echo "|  1)  [Start install]   |   Kernel:             |"
+echo "|                        |                       |"
+echo -e "| $GREEN $VERSION $RESET          |                       |"
+echo "|------------------------------------------------|"
+echo -e "|                    $RED Q) Quit $RESET                   |"
+echo "\\================================================/"
