@@ -187,6 +187,7 @@ startInstallMenu() {
   echo "|                          |                     |"
   echo "|------------------------------------------------|"
   echo -e "|   $RED A) Abort $RESET $YELLOW S) Save profile $RESET $GREEN I) Install $RESET    |"
+  echo -e "|   $RED B) Back (with no save) $RESET                     |"
   echo "\\================================================/"
 }
 
